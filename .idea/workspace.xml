@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d24cf0e-e039-4d50-ada3-79c4286cc9f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StringSorterTest.java" afterPath="$PROJECT_DIR$/src/StringSorterTest.java" />
     </list>
@@ -43,16 +42,12 @@
       <file leaf-file-name="StringSorterTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StringSorterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+            <state relative-caret-position="698">
+              <caret line="174" column="41" lean-forward="false" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#setUp#0;class#StringSorterTest#0" expanded="false" />
                 <element signature="method#testMergeSort#0;class#StringSorterTest#0" expanded="false" />
-                <element signature="method#testInsertionSort#0;class#StringSorterTest#0" expanded="false" />
                 <element signature="method#abecedario#0;class#StringSorterTest#0" expanded="false" />
-                <element signature="method#abecedario#1;class#StringSorterTest#0" expanded="false" />
-                <element signature="method#printer#0;class#StringSorterTest#0" expanded="false" />
                 <element signature="method#desordenar#0;class#StringSorterTest#0" expanded="false" />
               </folding>
             </state>
@@ -269,7 +264,7 @@
       <recent name="C:\Users\jcala\IdeaProjects\Practica1G22\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringSorterTest.testMergeSort">
+  <component name="RunManager" selected="JUnit.StringSorterTest.testInsertionSort">
     <configuration default="false" name="Correlator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -751,8 +746,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.StringSorterTest.testMergeSort" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.StringSorterTest.testInsertionSort" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StringSorterTest.testInsertionSort" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.StringSorterTest.testMergeSort" />
         <item index="2" class="java.lang.String" itemvalue="Application.Main" />
         <item index="3" class="java.lang.String" itemvalue="Application.Meter1" />
         <item index="4" class="java.lang.String" itemvalue="Application.Correlator" />
@@ -772,7 +767,7 @@
       <workItem from="1487083207515" duration="9178000" />
       <workItem from="1487444256613" duration="7078000" />
       <workItem from="1487455640916" duration="666000" />
-      <workItem from="1487456966806" duration="2530000" />
+      <workItem from="1487456966806" duration="2857000" />
     </task>
     <task id="LOCAL-00001" summary="Added Test&#10;Changed InsertionSort">
       <created>1487451266825</created>
@@ -781,15 +776,22 @@
       <option name="project" value="LOCAL" />
       <updated>1487451266825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed Test">
+      <created>1487459517661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487459517661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StringSorterTest_testMergeSort - 2017.02.19 at 00h 01m 33s.xml">
-      <configuration name="StringSorterTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="StringSorterTest_testInsertionSort - 2017.02.19 at 00h 16m 11s.xml">
+      <configuration name="StringSorterTest.testInsertionSort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StringSorterTest_testMergeSort - 2017.02.19 at 00h 01m 42s.xml">
-      <configuration name="StringSorterTest.testMergeSort" configurationId="JUnit" />
+    <history-entry file="StringSorterTest_testInsertionSort - 2017.02.19 at 00h 16m 58s.xml">
+      <configuration name="StringSorterTest.testInsertionSort" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StringSorterTest_testMergeSort - 2017.02.19 at 00h 02m 14s.xml">
       <configuration name="StringSorterTest.testMergeSort" configurationId="JUnit" />
@@ -817,7 +819,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19452000" />
+    <option name="totallyTimeSpent" value="19779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -862,7 +864,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Test&#10;Changed InsertionSort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Test&#10;Changed InsertionSort" />
+    <MESSAGE value="Fixed Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -881,15 +884,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/StringSorterTest.java</url>
-          <line>114</line>
-          <properties class="StringSorterTest" method="testInsertionSort" />
-          <option name="timeStamp" value="24" />
+          <line>179</line>
+          <properties class="StringSorterTest" method="desordenar" />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/StringSorterTest.java</url>
-          <line>177</line>
-          <properties class="StringSorterTest" method="desordenar" />
-          <option name="timeStamp" value="33" />
+          <line>35</line>
+          <properties class="StringSorterTest" method="setUp" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/StringSorterTest.java</url>
@@ -899,13 +902,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/StringSorterTest.java</url>
-          <line>139</line>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/StringSorterTest.java</url>
-          <line>136</line>
+          <line>138</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
@@ -921,8 +924,14 @@
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/StringSorterTest.java</url>
+          <line>173</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1075,12 +1084,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#setUp#0;class#StringSorterTest#0" expanded="false" />
             <element signature="method#testMergeSort#0;class#StringSorterTest#0" expanded="false" />
-            <element signature="method#testInsertionSort#0;class#StringSorterTest#0" expanded="false" />
             <element signature="method#abecedario#0;class#StringSorterTest#0" expanded="false" />
-            <element signature="method#abecedario#1;class#StringSorterTest#0" expanded="false" />
-            <element signature="method#printer#0;class#StringSorterTest#0" expanded="false" />
             <element signature="method#desordenar#0;class#StringSorterTest#0" expanded="false" />
           </folding>
         </state>
@@ -1341,16 +1346,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StringSorterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        <state relative-caret-position="698">
+          <caret line="174" column="41" lean-forward="false" selection-start-line="174" selection-start-column="41" selection-end-line="174" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#setUp#0;class#StringSorterTest#0" expanded="false" />
             <element signature="method#testMergeSort#0;class#StringSorterTest#0" expanded="false" />
-            <element signature="method#testInsertionSort#0;class#StringSorterTest#0" expanded="false" />
             <element signature="method#abecedario#0;class#StringSorterTest#0" expanded="false" />
-            <element signature="method#abecedario#1;class#StringSorterTest#0" expanded="false" />
-            <element signature="method#printer#0;class#StringSorterTest#0" expanded="false" />
             <element signature="method#desordenar#0;class#StringSorterTest#0" expanded="false" />
           </folding>
         </state>

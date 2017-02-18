@@ -132,6 +132,8 @@ public class StringSorterTest {
         sorterInsertion.sort(carga2d);
         sorterInsertion.sort(carga3d);
         sorterInsertion.sort(carga4d);
+        printer(carga4d);
+        printer(carga4);
         sorterInsertion.sort(carga5d);
         sorterInsertion.sort(cargaConEnied);
         sorterInsertion.sort(cargaConNumerosd);
@@ -162,7 +164,7 @@ public class StringSorterTest {
         for (int j = 0; j <= n; j++) {
             for (int i = 0; i < lista.length; i++) {
                 //Aniade una letra aleatoria al abecedario basico
-                lista[i].concat(String.valueOf((char)(random.nextInt(LONGABC)+97)));
+                lista[i] = lista[i].concat(String.valueOf((char)(random.nextInt(LONGABC)+97)));
             }
         }
         return lista;
@@ -170,7 +172,7 @@ public class StringSorterTest {
 
     private void printer(String[] toPrint){
         for(String s : toPrint){
-            System.out.print(s);
+            System.out.printf("---%s---",s);
         }
         System.out.println(" ");
     }
