@@ -30,15 +30,17 @@ public class MergeSort extends StringSorter {
 
             //Calculamos el punto medio
             int medio = datosLista.size()/2;
-            List<String> listIzq = new ArrayList<String>(datosLista.subList(0,medio));
-            List<String> listDer = new ArrayList<String>(datosLista.subList(medio,datosLista.size()));
-            List<String> listaResultado = new ArrayList<String>(datosLista.subList(medio,datosLista.size()));
+            List<String> listIzq = new ArrayList<>(datosLista.subList(0,medio));
+            List<String> listDer = new ArrayList<>(datosLista.subList(medio,datosLista.size()));
+            List<String> listaResultado = new ArrayList<>();
 
 
             listIzq = sortList(listIzq);
             listDer = sortList(listDer);
 
             listaResultado.clear();
+
+            //Merger
             while(listIzq.size() > 0 && listDer.size() > 0){
                 if(OpMeter.compareTo(listIzq.get(0),listDer.get(0)) < 0){
                     listaResultado.add(listIzq.get(0));
@@ -61,7 +63,7 @@ public class MergeSort extends StringSorter {
 
     public static void main(String args[]){
         MergeSort sorter = new MergeSort();
-        String[] lista = {"Hola","Adios","Caca","llave","nada"};
+        String[] lista = {"Hola","Adios","Caca","llave","nada","//","sjsjs"};
         String[] listaOrdenada;
         sorter.sort(lista);
         listaOrdenada = sorter.getArrayOrdenado();
