@@ -70,33 +70,21 @@ public class StringSorterTest {
         carga3d = desordenar(carga3);
         carga4d = desordenar(carga4);
         carga5d = desordenar(carga5);
-
         cargaConEnied = desordenar(cargaConEnie);
-
-
         cargaConNumerosd = desordenar(cargaConNumeros);
-
-        cargaConSimbolosd = desordenar(cargaConSimbolos);
-
+        //cargaConSimbolosd = desordenar(cargaConSimbolos);
 
 
-        //TODO: VER POR QUE COJONES NO SE PASA EL VALOR AL ARRAY
-        sorterInsertion.sort(carga1d);
+        //YA TA ARREGLADO
+        //TODO --  VER POR QUE COJONES NO SE PASA EL VALOR AL ARRAY
+        sorterMerge.sort(carga1d);
         sorterMerge.sort(carga2d);
-        carga2d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(carga3d);
-        carga3d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(carga4d);
-        carga4d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(carga5d);
-        carga5d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(cargaConEnied);
-        cargaConEnied = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(cargaConNumerosd);
-        cargaConNumerosd = sorterMerge.getArrayOrdenado();
-        //sorterMerge.sort(cargaConSimbolosd);
-        //printer(cargaConSimbolos);
-        //printer(cargaConSimbolosd);
+
 
 
         assertArrayEquals(carga1,carga1d);
@@ -132,6 +120,8 @@ public class StringSorterTest {
         sorterInsertion.sort(carga2d);
         sorterInsertion.sort(carga3d);
         sorterInsertion.sort(carga4d);
+        printer(carga4d);
+        printer(carga4);
         sorterInsertion.sort(carga5d);
         sorterInsertion.sort(cargaConEnied);
         sorterInsertion.sort(cargaConNumerosd);
@@ -162,7 +152,7 @@ public class StringSorterTest {
         for (int j = 0; j <= n; j++) {
             for (int i = 0; i < lista.length; i++) {
                 //Aniade una letra aleatoria al abecedario basico
-                lista[i].concat(String.valueOf((char)(random.nextInt(LONGABC)+97)));
+                lista[i] = lista[i].concat(String.valueOf((char)(random.nextInt(LONGABC)+97)));
             }
         }
         return lista;
@@ -170,7 +160,7 @@ public class StringSorterTest {
 
     private void printer(String[] toPrint){
         for(String s : toPrint){
-            System.out.print(s);
+            System.out.printf("---%s---",s);
         }
         System.out.println(" ");
     }

@@ -17,10 +17,45 @@ public class MergeSort extends StringSorter {
 
 
     public void sort(String[] datos) {
-        List<String> datosLista = new ArrayList<>();
-        Collections.addAll(datosLista, datos);
-        List<String> listaOrdenada  = sortList(datosLista);
-        arrayOrdenado = listaOrdenada.toArray(new String[listaOrdenada.size()]);
+        datos = mergeSort(datos);
+    }
+
+    private String[] mergeSort(String[] datos){
+        if(datos.length == 1){
+            return datos;
+        }
+
+        String[] izquierda = new String[datos.length/2];
+        String[] derecha = new String[datos.length-izquierda.length];
+        System.arraycopy(datos,0,izquierda,0,izquierda.length);
+        System.arraycopy(datos,izquierda.length,derecha,0,derecha.length);
+
+        mergeSort(izquierda);
+        mergeSort(derecha);
+
+        merge(izquierda,derecha,datos);
+        return datos;
+    }
+
+    private void merge(String[] izquierda, String[] derecha, String[] datos) {
+        int posIzquierda = 0;
+        int posDerecha = 0;
+
+        int j = 0;
+
+        while (posIzquierda < izquierda.length && posDerecha < derecha.length) {
+            if (izquierda[posIzquierda].compareTo(derecha[posDerecha]) <= 0) {
+                datos[j] = izquierda[posIzquierda];
+                posIzquierda++;
+            } else {
+                datos[j] = derecha[posDerecha];
+                posDerecha++;
+            }
+            j++;
+        }
+        // copy what's left
+        System.arraycopy(izquierda, posIzquierda, datos, j, izquierda.length - posIzquierda);
+        System.arraycopy(derecha, posDerecha, datos, j, derecha.length - posDerecha);
     }
 
     private List<String> sortList(List<String> datosLista) {
