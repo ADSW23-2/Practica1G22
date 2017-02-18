@@ -4,24 +4,14 @@
 
 public class InsertionSort extends StringSorter{
 
-
-    private String tmp[];
-
-    public String[] getArray(){
-        return tmp;
-    }
-
     @Override
     public void sort(String[] datos) {
-        tmp = datos;
-        for(int i = 0; i < tmp.length; i++){
-            int j = i;
-            int z = i;
-            String v = tmp[i];
-            while(0 < j && OpMeter.compareTo(v,tmp[j-1]) < 0){
+        for(int k = 0; k < datos.length; k++){
+            String actual = datos[k];
+            int j = k-1;
+            while(j >= 0 && actual.compareTo(datos[j]) < 0){
+                swap(datos,j,j+1);
                 j--;
-                System.arraycopy(tmp,j,tmp,j+1,z-j);
-                tmp[j] = v;
             }
         }
     }
@@ -29,10 +19,8 @@ public class InsertionSort extends StringSorter{
     public static void main(String[] args){
         InsertionSort sorter = new InsertionSort();
         String[] lista = {"Hola","Adios","Caca","llave","nada"};
-        String[] listaOrdenada;
         sorter.sort(lista);
-        listaOrdenada = sorter.getArray();
-        for(String e: listaOrdenada){
+        for(String e: lista){
             System.out.println(e);
         }
     }
