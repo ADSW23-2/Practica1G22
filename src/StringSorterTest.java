@@ -70,33 +70,21 @@ public class StringSorterTest {
         carga3d = desordenar(carga3);
         carga4d = desordenar(carga4);
         carga5d = desordenar(carga5);
-
         cargaConEnied = desordenar(cargaConEnie);
-
-
         cargaConNumerosd = desordenar(cargaConNumeros);
-
-        cargaConSimbolosd = desordenar(cargaConSimbolos);
-
+        //cargaConSimbolosd = desordenar(cargaConSimbolos);
 
 
-        //TODO: VER POR QUE COJONES NO SE PASA EL VALOR AL ARRAY
-        sorterInsertion.sort(carga1d);
+        //YA TA ARREGLADO
+        //TODO --  VER POR QUE COJONES NO SE PASA EL VALOR AL ARRAY
+        sorterMerge.sort(carga1d);
         sorterMerge.sort(carga2d);
-        carga2d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(carga3d);
-        carga3d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(carga4d);
-        carga4d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(carga5d);
-        carga5d = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(cargaConEnied);
-        cargaConEnied = sorterMerge.getArrayOrdenado();
         sorterMerge.sort(cargaConNumerosd);
-        cargaConNumerosd = sorterMerge.getArrayOrdenado();
-        //sorterMerge.sort(cargaConSimbolosd);
-        //printer(cargaConSimbolos);
-        //printer(cargaConSimbolosd);
+
 
 
         assertArrayEquals(carga1,carga1d);
